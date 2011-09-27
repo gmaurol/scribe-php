@@ -1,0 +1,57 @@
+h2. Welcome to the home of Scribe, the simple OAuth PHP lib!
+
+h1. Why use Scribe?
+
+Scribe is proven to be the most straight forward and reliable OAuth library for java, (wrote by Pablo Fernandez) so I decided to port it to PHP. 
+
+h3. Dead Simple 
+
+Who said OAuth was difficult? Configuring scribe is __so easy your grandma can do it__! check it out:
+
+@$builder = new ServiceBuilder();@
+@$service = $builder->provider(new TwitterApi())@
+    @->apiKey(YOUR_API_KEY)@
+    @->apiSecret(YOUR_API_SECRET)@
+    @->build();@
+                                  
+h3. Supports all major 1.0a and 2.0 OAuth APIs out-of-the-box
+
+* Google
+
+* Facebook
+
+* Yahoo
+
+* LinkedIn
+
+* Twitter
+
+* Foursquare
+
+* Evernote
+
+* Vimeo
+
+* Yammer
+
+* Windows Live
+
+* and many more!
+
+h3. Small and modular
+
+Scribe's code is small and simple to understand. No smart-ass or "clever" hacks here.
+
+h3. Stable & bulletproof
+
+Good test coverage to keep you safe from harm. 
+
+When something bad actually happens, Scribe's meaningful error messages will tell you exactly what went wrong, when and where.
+
+h1. About me
+
+"LinkedIn profile":http://www.linkedin.com/in/gmaurol
+
+Email me: gmaurol at gmail.com
+
+Follow me: "@gmaurol":http://twitter.com/gmaurol

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   * The MIT License (MIT)
+ * Copyright (c) 2011 Mauro Gonzalez 
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy 
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+ * copies of the Software, and to permit persons to whom the Software is 
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in 
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ * FITNESS FOR A PARTICULAR PURPOSE AND NO2NINFRINGEMENT. IN NO EVENT SHALL THE 
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+ * THE SOFTWARE.
+ 
+ 
+ Document   : phpunit.xml.xml
+    Created on : September 11, 2011, 10:13 PM
+    Author     : gmaurol
+    Description:
+        Purpose of the document follows.
+-->
+    
+
+<phpunit backupGlobals="true"
+         backupStaticAttributes="false"
+         bootstrap="bootstrap.php"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         mapTestClassNameToCoveredClassName="false"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         syntaxCheck="true"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+         strict="true"
+         verbose="false"
+         >
+  <logging>
+    <log type="coverage-html" target="../../target/report" charset="UTF-8"
+       yui="true" highlight="false"
+       lowUpperBound="35" highLowerBound="70"/>
+    <log type="coverage-clover" target="../../target/coverage.xml"/>
+    <log type="json" target="../../target/logfile.json"/>
+    <log type="tap" target="../../target/logfile.tap"/>
+    <log type="junit" target="../../target/logfile.xml" logIncompleteSkipped="false"/>
+    <log type="testdox-html" target="../../target/testdox.html"/>
+    <log type="testdox-text" target="../../target/testdox.txt"/>
+  </logging>
+ 
+</phpunit>
+

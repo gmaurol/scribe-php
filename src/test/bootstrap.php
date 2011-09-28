@@ -34,6 +34,7 @@ require_once SCRIBE_ROOT . '/exceptions/IllegalArgumentException.php';
 require_once SCRIBE_ROOT . '/exceptions/OAuthException.php';
 require_once SCRIBE_ROOT . '/exceptions/OAuthParametersMissingException.php';
 require_once SCRIBE_ROOT . '/exceptions/OAuthSignatureException.php';
+require_once SCRIBE_ROOT . '/exceptions/UnsupportedOperationException.php';
 
 require_once SCRIBE_ROOT . '/extractors/BaseStringExtractor.php';
 require_once SCRIBE_ROOT . '/extractors/HeaderExtractor.php';

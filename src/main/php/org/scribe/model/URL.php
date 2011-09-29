@@ -35,9 +35,7 @@ class URL {
   }
 
   public function openConnection() {
-
-    $class = Config::get('http_connection_classname');
-    return new $class($this->url);
+    return new HttpURLConnectionCurl($this->url);
   }
 
   public function getQuery() {

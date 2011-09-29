@@ -15,29 +15,8 @@ class URLTest extends PHPUnit_Framework_TestCase {
   }
 
   public function testOpenConnection() {
-    $httClassName = Config::get('http_connection_classname');
-    Config::set('http_connection_classname', 'DummyHttpUrlConn');
     $conn = $this->subject->openConnection();
-    $this->assertTrue($conn instanceof DummyHttpUrlConn);
-    $this->assertEquals(
-      sprintf("%s?%s", self::TEST_URL, self::TEST_QUERY), $conn->getUrl()
-    );
-
-    Config::set('http_connection_classname', $httClassName);
-  }
-
-}
-
-class DummyHttpUrlConn {
-
-  private $url;
-
-  public function __construct($u) {
-    $this->url = $u;
-  }
-
-  public function getUrl() {
-    return $this->url;
+    $this->assertTrue($conn instanceof HttpURLConnection);
   }
 
 }

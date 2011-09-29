@@ -48,7 +48,6 @@ require_once SCRIBE_ROOT . '/extractors/RequestTokenExtractor.php';
 require_once SCRIBE_ROOT . '/extractors/TokenExtractorImpl.php';
 require_once SCRIBE_ROOT . '/extractors/TokenExtractor20Impl.php';
 
-require_once SCRIBE_ROOT . '/model/Config.php';
 require_once SCRIBE_ROOT . '/model/Verb.php';
 require_once SCRIBE_ROOT . '/model/SignatureType.php';
 require_once SCRIBE_ROOT . '/model/URL.php';

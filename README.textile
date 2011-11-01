@@ -2,7 +2,7 @@ h2. Welcome to the home of Scribe, the simple OAuth PHP lib!
 
 h1. Why use Scribe?
 
-Scribe is proven to be the most straight forward and reliable OAuth library for java, (wrote by Pablo Fernandez) so I decided to port it to PHP. 
+Scribe is proven to be the most straightforward and reliable OAuth library for java, (written by Pablo Fernandez) so I decided to port it to PHP. 
 
 h3. Dead Simple 
 

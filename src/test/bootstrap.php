@@ -13,7 +13,8 @@ require_once SCRIBE_ROOT . '/builder/api/DefaultApi20.php';
 require_once SCRIBE_ROOT . '/builder/api/DropBoxApi.php';   
 require_once SCRIBE_ROOT . '/builder/api/FacebookApi.php';     
 require_once SCRIBE_ROOT . '/builder/api/FoursquareApi.php';  
-require_once SCRIBE_ROOT . '/builder/api/LinkedInApi.php';  
+require_once SCRIBE_ROOT . '/builder/api/LinkedInApi.php'; 
+require_once SCRIBE_ROOT . '/builder/api/FlickrApi.php';
 require_once SCRIBE_ROOT . '/builder/api/LoveFilmApi.php';       
 require_once SCRIBE_ROOT . '/builder/api/PlurkApi.php';      
 require_once SCRIBE_ROOT . '/builder/api/SohuWeiboApi.php';  
@@ -29,6 +30,7 @@ require_once SCRIBE_ROOT . '/builder/api/SinaWeiboApi.php';
 require_once SCRIBE_ROOT . '/builder/api/TwitterApi.php';    
 require_once SCRIBE_ROOT . '/builder/api/VkontakteApi.php';  
 require_once SCRIBE_ROOT . '/builder/api/YammerApi.php';
+
 
 require_once SCRIBE_ROOT . '/exceptions/IllegalArgumentException.php';
 require_once SCRIBE_ROOT . '/exceptions/OAuthException.php';
